@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonItemComponent implements OnInit {
 
-  constructor() { }
+  pokemonList: any = {};
+
+  constructor(private requisicao: HttpClient) { }
 
   ngOnInit(): void {
   }
