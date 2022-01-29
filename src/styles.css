@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  ;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+
+.box {
+  margin-left: 64px;
+  padding: 28px;
+  background: #f4f4f4;
+  height: 100%;
+  min-height: 300px;
+}
+
+hr {
+  width: 100%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
