@@ -7,3 +7,8 @@ img {
   margin-bottom: 15px;
   float: left;
 }
+
+h4 {
+  font-weight: 600;
+  color: #4279A5;
+}

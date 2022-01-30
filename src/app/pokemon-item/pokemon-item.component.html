@@ -1,62 +1,22 @@
 <ul>
-  <li>
+  <li *ngFor="let item of pokemonList">
     <img src="../../assets/image 1.png" alt="">
-    <h4>Caterpie #10</h4>
+    <h4>{{item.nome}}</h4>
     <p>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
       tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in
       aliquam.</p>
+    <hr>
   </li>
 </ul>
-<hr>
-<ul>
-  <li>
-    <img src="../../assets/image 1.png" alt="">
-    <h4>Caterpie #10</h4>
-    <p>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
-      tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in
-      aliquam.</p>
-  </li>
-</ul>
-<hr>
-<ul>
-  <li>
-    <img src="../../assets/image 1.png" alt="">
-    <h4>Caterpie #10</h4>
-    <p>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
-      tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in
-      aliquam.</p>
-  </li>
-</ul>
-<ul>
-  <hr>
-  <li>
-    <img src="../../assets/image 1.png" alt="">
-    <h4>Caterpie #10</h4>
-    <p>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
-      tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in
-      aliquam.</p>
-  </li>
-</ul>
-<hr>
-<ul>
-  <li>
-    <img src="../../assets/image 1.png" alt="">
-    <h4>Caterpie #10</h4>
-    <p>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
-      tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in
-      aliquam.</p>
-  </li>
-</ul>
-<hr>
 
 
-<!--end point que lista todos os pokémons: 
+<!--end point que lista todos os pokémons:
 https://pokeapi.co/api/v2/pokemon?limit=20
 
 end point detalhes dos pokémons:
 https://pokeapi.co/api/v2/pokemon/25/
 
 Caminho da imagem:
-sprites >> other >> dream_world >> front_default << 
+sprites >> other >> dream_world >> front_default <<
 
 -->
