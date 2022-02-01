@@ -1,22 +1,21 @@
+<hr>
+<p>Exibindo {{quantidadePorPagina}} de {{quantidadeTotal}} itens</p>
+<hr>
 <ul>
   <li *ngFor="let item of pokemonList">
-    <img src="../../assets/image 1.png" alt="">
+    <img src="{{item.caminhoImagem}}" alt="">
     <h4>{{item.nome}}</h4>
-    <p>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor
-      tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in
-      aliquam.</p>
+    <p>{{item.caracteristicas}}</p>
     <hr>
   </li>
 </ul>
 
-
-<!--end point que lista todos os pokémons:
-https://pokeapi.co/api/v2/pokemon?limit=20
-
-end point detalhes dos pokémons:
-https://pokeapi.co/api/v2/pokemon/25/
-
-Caminho da imagem:
-sprites >> other >> dream_world >> front_default <<
-
--->
+<section>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item"><a class="page-link" *ngIf="previousUrl !='' && previousUrl != null "
+          (click)="buscarPokemon(previousUrl)">Anterior</a></li>
+      <li class="page-item"><a class="page-link" (click)="buscarPokemon(nextUrl)">Próximo</a></li>
+    </ul>
+  </nav>
+</section>
